@@ -1,0 +1,17 @@
+TODO:
+Changer la BDD:
+-enlever clé primaire de la table mot car l'idtheme est suffisante.
+- faire en sorte que le model java corresponde aux tables de la BDD
+
+Table thèmes:
+Une clé primaire
+Un label
+Exemple: 1, reprise d'études
+
+Table mot:
+Une clé étrangère du thème correspondant
+Un label
+Une définition
+PRIMARY KEY([idThème],[label])
+Exemple: 1, formation continue, dispositif mis en place pour permettre aux adultes d'étudier
+
