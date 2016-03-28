@@ -1,5 +1,0 @@
-PRAGMA foreign_keys=OFF;
-BEGIN TRANSACTION;
-CREATE TABLE themes(id int PRIMARY KEY, label varchar(50));
-CREATE TABLE words(id int PRIMARY KEY, label varchar(50), definition varchar(1000), themeid int, FOREIGN KEY(themeid) REFERENCES themes(id));
-COMMIT;
