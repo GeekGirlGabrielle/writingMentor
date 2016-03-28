@@ -1,3 +1,0 @@
-
-CREATE TABLE themes(id int PRIMARY KEY, label text);
-CREATE TABLE words(id int PRIMARY KEY, label text, definition text, themeid int, FOREIGN KEY(themeid) REFERENCES themes(id));
